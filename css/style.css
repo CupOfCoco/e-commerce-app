@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,700;1,9..40,300;1,9..40,400&family=Forum&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400&family=Roboto+Condensed:wght@300;400&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Tangerine:wght@700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 65%;
+    scroll-behavior: smooth;
+    scroll-snap-type: mandatory;
+}
+body{
+    font-size: large;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Forum', cursive;
+    font-weight: 300;
+    height: 100vh;
+}
+.container{
+    background-color: black;
+    color: white;
+    padding: 15px 50px; 
+}
+#Nav1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.search{
+    display: flex;
+    align-items: center;
+    background-color:gray;
+    padding: 7px 20px;
+    border-radius: 10px;
+}
+.searchlogo{
+    width: 30px;
+    height: 35px;
+    margin-left: 10px;
+}
+#searchinput{
+    border: none;
+    background-color: transparent;
+    margin: 5px;
+    padding: 5px;
+    outline: none;
+
+}
+#searchinput::placeholder{
+    color: lightgray;
+}
+.nikeair{
+    background-color: transparent;
+    border-radius: 10px;
+    height: 80px;
+}
+.offer{
+    font-size: 28px;
+    cursor: pointer;
+}
+.Nav2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.listItem{
+    padding: 10px;
+    color: lightgray;
+     margin-right: 10px;
+     font-weight: 400;
+}
+.listItem:hover{
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0 -5px 0px transparent inset,
+    500px 0 0 rgba(255, 255, 255, 0.03)inset;
+}
+#GIFT{
+    background: url(../img/gucci\ girl\ bag.avif)no-repeat center center/cover;
+    padding: 10px;
+    background-attachment: fixed;
+}
+#WHATSNEW{
+    background: url(../img/gucci\ shoe\ 2.avif)no-repeat center center/cover;
+}
+#HANDBAGS{
+     background: url(../img/gucci\ bag\ model.avif)no-repeat center center/cover;
+}
+#WOMEN{
+    background: url(../img/gucci\ female\ hat.avif)no-repeat center center/cover;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) ;
+    padding-right: 10px;
+    color: black;
+}
+#MEN{
+    background: url(../img/gucci\ waoistbag.avif)no-repeat center center/cover;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-right: 10px;
+    color: black;
+}
+#JEWELRY{
+    background: url(../img/gucci\ glassees.avif)no-repeat center center/cover;
+    padding-right: 10px;
+    color: white;
+}
+#DECOR{
+    background: url(../img/gucci\ storess.avif)no-repeat center center/cover;
+    padding-right: 10px;
+    color:white;
+}
+#BEAUTY{
+    background: url(../img/gucci\ make\ up.avif)no-repeat center center/cover;
+    padding-right: 10px;
+    color: black;
+}
+.slidewrap{
+    font-size: 32px;
+    padding: 10px;
+}
+.prod{
+    padding: 10px;
+    font-size: larger;
+    
+}
+.img1{
+    padding: 15px;
+    margin: 10px;
+    border-radius: 50%;
+    
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+#GIFT,#WHATSNEW,#HANDBAGS,#WOMEN,#MEN,#JEWELRY,#DECOR,#BEAUTY{
+    height: 100vh;
+    scroll-behavior: smooth;
+    scroll-snap-type:y mandatory;
+}
+P{
+    font-size: 18px;
+    font-style: italic;
+    padding: 10px;
+    font-weight: bolder;
+}
+.buyButton{
+    background-color: transparent;
+    color: brown;
+    padding: 15px;
+}
+.buyButton:hover{
+    background-color: black;
+}
+.payment{
+    width: 570px;
+    height: 570px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: black;
+    padding: 10px 50px;
+    display: none;
+    flex-direction: column;
+   box-shadow: 0 0 13px 2px rgba(31, 28, 28, 0.5);
+}
+.paytitle{
+    padding: 10px;
+    margin-bottom: 15px;
+    color: rgb(209, 202, 202);
+    font-style: italic;
+}
+label{
+    font-size: 28px;
+    font-weight: 300;
+}
+.payInput{
+    margin: 7px;
+    padding: 7px;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+.payInput::placeholder{
+    color: gray;
+}
+.cardlogos{
+    display: flex;
+    margin-right: 15px;
+}
+.cardinfo{
+    display: flex;
+    justify-content: space-between;
+}
+.sm{
+    width: 29%;
+}
+.payBtn{
+    margin-top: 10px;
+    color: black;
+    padding: 10px;
+}
+.payBtn:hover{
+    color: white;
+    cursor: pointer;
+    background-color: black;
+}
+.close{
+    width: 20;
+    height: 20;
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 7px;
+    cursor: pointer;
+
+
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+.footertext p{
+    font-size: 20px;
+}
+#scrollup a{
+ display: inline-block;
+ padding: 8px;
+ justify-content: center;
+ align-items: center;
+ background-color: rgb(49, 45, 45);
+ border-radius: 5px;
+ transition: .5s ease;
+}
+#scrollup a:hover{
+    box-shadow: 0 0 5px rgb(46, 40, 40);
+}
+#scrollup a i{
+    font-size: 20px;
+}
+@media (max-width: 992px){
+    html{
+        font-size: 65%;
+    }
+    .container{
+        padding: 10px 40px;
+    }
+    .listItem{
+        margin: 5px;
+        font-weight: 400;
+        font-size: 20px;
+        padding: 5px;
+    }
+    .payment{
+        width: 500px;
+        height: 500px;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        color: black;
+        padding: 10px 40px;
+        display: none;
+        flex-direction: column;
+       box-shadow: 0 0 13px 2px rgba(31, 28, 28, 0.5);
+    }
+}
+
+@media (max-width: 768px){
+    html{
+        font-size: 55%;
+    }
+    .container{
+        padding:  10px 30px;
+   
+    }
+    .listItem{
+        margin: 5px;
+        font-weight: 400;
+        font-size: 16px;
+        padding: 5px;
+    }
+    .payment{
+        width: 450px;
+        height: 500px;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        color: black;
+        padding: 7px 30px;
+        display: none;
+        flex-direction: column;
+       box-shadow: 0 0 13px 2px rgba(31, 28, 28, 0.5);
+    }
+}
+
+@media (max-width: 480px){
+    html{
+        font-size: 55%;
+    }
+    .container{
+        padding:  10px 30px;
+   
+    }
+    nav{
+        padding: 20px;
+    }
+    .search{
+        display: none;
+    }
+
+    .listItem{
+        margin: 0px;
+        font-weight: 700;
+        font-size: 28px;
+    }
+    .payment{
+        width: 400px;
+        height: 500px;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        color: black;
+        padding: 7px 40px;
+        display: none;
+        flex-direction: column;
+       box-shadow: 0 0 13px 2px rgba(31, 28, 28, 0.5);
+    }
+}

@@ -1,11 +1,11 @@
+const buyButton = document.querySelector('.buyButton');
+const payment = document.querySelector('.payment');
+const close = document.querySelector('.close');
 
-let back = document.querySelector('#back')
-let chatBox = document.querySelector('.chatBox')
-let open = document.querySelector('.open')
+buyButton.addEventListener("click",()=>{
+    payment.style.display= "flex"
+})
+close.addEventListener("click",()=>{
+    payment.style.display= "none"
+})
 
-back.onclick = function(){
-chatBox.classList.add('hide');
-}
-open.onclick = function(){
-chatBox.classList.remove('hide');
-}
